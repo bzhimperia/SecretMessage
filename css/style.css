@@ -1,4 +1,6 @@
 body {
+  height: 100vh;
+  position: relative;
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
@@ -6,12 +8,18 @@ body {
 }
 
 #app {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  right: 0%;
   max-width: 600px;
+  max-height: 200px;
   margin: 50px auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 form {
@@ -51,14 +59,8 @@ button {
   margin-bottom: 20px;
 }
 
-button#copyButton,
-button#backToFormButton,
-button#backToFormFromDecoded {
-  margin-top: 10px;
-  padding: 8px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+#decodedMessage {
+  color: rgb(165, 6, 6);
+  font-size: 2rem;
+  font-weight: bold;
 }

@@ -8,5 +8,4 @@ copyButton.addEventListener("click", copyLink);
 backToFormButton.addEventListener("click", backToForm);
 
 decodeMessage();
-
 window.addEventListener("hashchange", decodeMessage);
